@@ -573,15 +573,36 @@ projects
 
 .project-1 {
   grid-area: a;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/computer-vision.png);
 }
+
 .project-2 {
   grid-area: b;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/nlp.png) center/cover;
 }
 .project-3 {
   grid-area: c;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/web-1.jpg) center/cover;
 }
 .project-4 {
   grid-area: d;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/web-2.jpg) center/cover;
 }
 
 .project-icon {
@@ -599,6 +620,7 @@ projects
 }
 
 .project-info {
+  color: var(--clr-grey-1);
   text-align: left;
   padding: 0 1rem;
 }
@@ -742,4 +764,37 @@ timeline
 
 .index-even {
   transform: translate(-2.9rem, calc(10vh - 0.9rem));
+}
+
+/*
+============
+footer
+============
+*/
+
+.footer {
+  height: 30vh;
+  background-color: var(--clr-grey-1);
+  display: grid;
+  justify-content: center;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 4rem 4rem;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: var(--clr-white);
+  font-size: 2rem;
+}
+
+.copyright p {
+  font-size: 1rem;
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
 }
