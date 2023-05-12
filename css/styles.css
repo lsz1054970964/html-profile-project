@@ -166,6 +166,12 @@ p {
 }
 
 /*
+=================
+Home page
+=================
+*/
+
+/*
 ============
 navbar
 ============
@@ -797,4 +803,75 @@ footer
   color: var(--clr-white);
   letter-spacing: var(--spacing);
   text-transform: capitalize;
+}
+
+/*
+=================
+About page
+=================
+*/
+
+.about-page {
+  background: var(--clr-primary-10);
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.about-page-container {
+  background: var(--clr-primary-10);
+  height: 50vh;
+  width: 60vw;
+  border-radius: var(--radius);
+}
+
+.about-header {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.about-info {
+  color: var(--clr-grey-5);
+  font-weight: bold;
+  letter-spacing: var(--spacing);
+  margin-bottom: 1rem;
+}
+
+/*
+=================
+Contact page
+=================
+*/
+
+.contact {
+  background: var(--clr-primary-10);
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.contact-container {
+  background: var(--clr-primary-10);
+  height: 50vh;
+  width: 60vw;
+  border-radius: var(--radius);
+}
+
+.contact-header {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  color: var(--clr-grey-5);
+  font-weight: bold;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
 }

@@ -4,8 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about page</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h1>about page</h1>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="../images/logo.png" alt="Shuzhou Liu" class="logo-img" />
+        <button class="nav-btn" id="nav-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <ul class="page-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <section class="sidebar" id="sidebar">
+      <div class="sidebar-container">
+        <div class="close-btn" id="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul class="sidebar-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+        <ul class="social-links">
+          <li><a href="https://www.linkedin.com/in/shuzhou-liu/"><i class="fa-brands fa-linkedin"></i></i></a></li>
+          <li><a href="https://github.com/lsz1054970964"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- end of sidebar -->
+    <!-- about -->
+    <section class="about-page">
+      <article class="about-page-container">
+        <h1 class="about-header">about me</h1>
+        <div class="underline"></div>
+        <p class="about-info">I am a final-year master student major at AI Engineering from Jönköping University. I am planning graduate in June 2023 and looking for a full-time job now.
+        </p>
+        <p class="about-info">
+          I am interested and have experiences in AI modelling especially in data science and computer vision fields and web development with React framework in the front-end.
+        </p>
+        <p class="about-info">I am now looking for a full-time job after graduation. </p>
+        <p class="about-info">If you want to contact me, you can find my contact information on the contact page.</p>
+      </article>
+    </section>
+    <!-- end of about -->
+    <!-- footer -->
+    <section class="footer">
+      <article>
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com/in/shuzhou-liu/"><i class="fa-brands fa-linkedin"></i></i></a></li>
+          <li><a href="https://github.com/lsz1054970964"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </article>
+      <article class="copyright">
+        <p>&#169 2023 Shuzhou Liu. All rights reserved.</p>
+      </article>
+    </section>
+    <!-- end of footer -->
   </body>
 </html>
