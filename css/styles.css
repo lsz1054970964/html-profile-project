@@ -872,6 +872,115 @@ Contact page
   color: var(--clr-grey-5);
   font-weight: bold;
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
   margin-bottom: 1rem;
+}
+
+/*
+=================
+Project page
+=================
+*/
+.page-header {
+  background: var(--clr-primary-10);
+  height: 50vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.page-header-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.page-projects {
+  background: var(--clr-white);
+}
+
+.page-projects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+  align-content: center;
+  margin: 2rem;
+}
+
+.page-project-container {
+  width: 90vw;
+  height: 60vh;
+  background-color: var(--clr-grey-10);
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  justify-items: center;
+  border-radius: var(--radius);
+  outline: 2px solid var(--clr-grey-10);
+}
+
+.page-project-img img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.page-project-icon {
+  font-size: 1.5rem;
+  color: var(--clr-primary-1);
+  background-color: var(--clr-primary-5);
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  outline: 0.5rem solid var(--clr-grey-10);
+  transform: translate(calc(45vw - 1.5rem), -1.5rem);
+}
+
+.page-project-icon i {
+  transform: translate(0.35rem, 0.1rem);
+}
+
+.page-project-info {
+  display: grid;
+  padding: 0 1rem;
+}
+
+.link-icon {
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1rem;
+}
+
+.link-icon a {
+  font-size: 1rem;
+  color: var(--clr-primary-5);
+  justify-self: end;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 600px) {
+  .page-projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .page-project-container {
+    width: 40vw;
+  }
+  .page-project-icon {
+    transform: translate(calc(20vw - 1rem), -1.5rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .page-projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .page-project-container {
+    width: 30vw;
+  }
+  .page-project-icon {
+    transform: translate(calc(15vw - 1rem), -1.5rem);
+  }
 }
